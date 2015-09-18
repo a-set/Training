@@ -1,0 +1,5 @@
+.settings/
+target/classes/com/sethspace/training/DataInput.class
+target/classes/com/sethspace/training/MyBinarySearch.class
+target/test-classes/com/sethspace/training/MyBinarySearchTest.class
+target/test-classes/com/sethspace/training/MyTestRunner.class
