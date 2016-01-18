@@ -16,6 +16,12 @@ public class DataInput {
 		this.out = out;
 	}
 	
+	
+	public String getStringFromUser(String message){
+		out.println(message);
+		return scanner.next();
+	}
+	
 	/**
 	 * This method is used to get a Data List from the user 
 	 * @param purpose

@@ -30,7 +30,7 @@ public class MyBinarySearch {
 		 * Get the middle element
 		 */
 		
-		int mid = number/numbers.size()-1;
+		int mid = numbers.size()/2;
 		
 		/*
 		 * While the mid is a legal index perform binary search

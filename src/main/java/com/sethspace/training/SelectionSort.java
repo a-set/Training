@@ -4,37 +4,31 @@ import java.util.List;
 
 public class SelectionSort {
 	
-	private SortingOrder sortingOrder;
 	
-	public SelectionSort(SortingOrder sortingOrder){
-		this.sortingOrder = sortingOrder;
-	}
+	static Integer[] a = new Integer[] {64,25,12,22,11};
 	
-	/**
-	 * This method finds the next element based on the sorting order 
-	 * @param list The unsorted list to be sorted
-	 * @return the next element to be put in order
-	 */
-	public Object findNextInOrder(List<Object> list, SortingOrder sortingOrder){
+	public static void main(String args[]){
+		int i,j,min,temp;
 		
-	}
-	
-	/**
-	 * Finds the minimum element in the given list
-	 * @param list
-	 * @return
-	 */
-	public Object findMin(List<Object> list){
+		for(i=0;i<a.length-1;i++){
+			min = i;
+			j=i+1;
+			while(j<a.length){
+				if(a[j]<a[min]){
+					min =j;
+				}
+				j++;
+			}
+			//Only swap if necessary
+			if(min!=i){
+				temp = a[min];
+				a[min] = a[i];
+				a[i] = temp;
+			}
+		}
 		
-	}
-	
-	/**
-	 * Finds the Maximum element in the given list
-	 * @param list
-	 * @return
-	 */
-	public Object findMax(List<Object> list){
-		
+		for(i=0;i<a.length;i++)
+			System.out.println(a[i]);
 	}
 	
 }
