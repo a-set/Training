@@ -26,4 +26,15 @@ public class BitManipulationTester {
 		org.junit.Assert.assertEquals("Failure",result,MaskingBits.maskBits(n, m, i, j));
 		
 	}
+	
+	@Test
+	public void conversionToBinary(){
+		//known result
+		String expected = "11.01";
+		Double input = 3.25;
+		
+		org.junit.Assert.assertEquals("Failure",expected,ConvertToBinary.convert(input));	
+	}
+	
+	
 }
